@@ -5,6 +5,7 @@ import { createStackNavigator, createAppContainer } from 'react-navigation';
 import HomeScreen from './src/screens/home/HomeScreen';
 import KayitScreen from './src/screens/kayit/KayitScreen';
 import ListeScreen from './src/screens/liste/ListeScreen';
+import SilScreen from './src/screens/sil/SilScreen';
 
 
 const stack = createStackNavigator({
@@ -26,6 +27,12 @@ const stack = createStackNavigator({
       title : 'Üye Listesi'
     }
   },
+  Sil: {
+    screen: SilScreen,
+    navigationOptions: {
+      title : 'Üye Sil'
+    }
+  }
 },{
   headerLayoutPreset : 'center'
 });
