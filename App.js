@@ -3,6 +3,7 @@ import { createStackNavigator, createAppContainer } from 'react-navigation';
 
 /* Screens */
 import HomeScreen from './src/screens/home/HomeScreen';
+import KayitScreen from './src/screens/kayit/KayitScreen';
 
 
 const stack = createStackNavigator({
@@ -10,6 +11,12 @@ const stack = createStackNavigator({
     screen: HomeScreen,
     navigationOptions: {
       title : 'Üyelik Sistemi'
+    }
+  },
+  Kayit: {
+    screen: KayitScreen,
+    navigationOptions: {
+      title : 'Yeni Üyelik'
     }
   }
 },{
