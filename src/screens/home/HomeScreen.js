@@ -43,7 +43,7 @@ export default class HomeScreen extends React.Component {
             <BBButon title="Kayıt Ol" itemClick={() => {this.props.navigation.navigate('Kayit')}} />
             <BBButon title="Güncelle" />
             <BBButon title="Göster" />
-            <BBButon title="Tümünü Listele" />
+            <BBButon title="Tümünü Listele"  itemClick={() => {this.props.navigation.navigate('Liste')}} />
             <BBButon title="Sil" />
         </View>);
     }

@@ -4,6 +4,7 @@ import { createStackNavigator, createAppContainer } from 'react-navigation';
 /* Screens */
 import HomeScreen from './src/screens/home/HomeScreen';
 import KayitScreen from './src/screens/kayit/KayitScreen';
+import ListeScreen from './src/screens/liste/ListeScreen';
 
 
 const stack = createStackNavigator({
@@ -18,7 +19,13 @@ const stack = createStackNavigator({
     navigationOptions: {
       title : 'Yeni Üyelik'
     }
-  }
+  },
+  Liste: {
+    screen: ListeScreen,
+    navigationOptions: {
+      title : 'Üye Listesi'
+    }
+  },
 },{
   headerLayoutPreset : 'center'
 });
