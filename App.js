@@ -1,11 +1,11 @@
 import React from 'react';
-import { createStackNavigator } from 'react-navigation';
+import { createStackNavigator, createAppContainer } from 'react-navigation';
 
 /* Screens */
 import HomeScreen from './src/screens/home/HomeScreen';
 
 
-const App = createStackNavigator({
+const stack = createStackNavigator({
   Home: {
     screen: HomeScreen,
     navigationOptions: {
@@ -15,5 +15,8 @@ const App = createStackNavigator({
 },{
   headerLayoutPreset : 'center'
 });
+
+
+const App = createAppContainer(stack);
 
 export default App;
